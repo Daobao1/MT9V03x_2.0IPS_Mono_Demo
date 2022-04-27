@@ -32,7 +32,7 @@ int core0_main(void)
     ips200_showstr(0, 1, "Initializing...");
     //如果屏幕没有任何显示，请检查屏幕接线
 
-
+    mt9v03x_init();
     //如果屏幕一直显示初始化信息，请检查摄像头接线
     //如果使用主板，一直卡在while(!uart_receive_flag)，请检查是否电池连接OK?或者摄像头的配置串口与单片机连接是否正确
     //如果图像只采集一次，请检查场信号(VSY)是否连接OK?
